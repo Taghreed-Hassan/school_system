@@ -15,17 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::group(['middleware'=>['gust']],function(){ 
+Route::group(['middleware' => ['guest']], function () {
 
-    Route::get('/', function()
-        {
-    return view('auth.login');
-     });
+    Route::get('/', function () {
+        return view('auth.login');
+    });
 
 });
 
-
-
+//==============================Translate all pages===========================
 
 Route::group(
     [
@@ -37,14 +35,15 @@ Route::group(
        
        Route::group(['namespace'=>'Grads'],function(){
 
-                Route::resource('grade','GradeController');
-
+            
+                Route::resource('Grades', 'GradeController');
 
        });
       
 
     });
 
+   
 
 
 //Route::get('/home', 'HomeController@index')->name('home');

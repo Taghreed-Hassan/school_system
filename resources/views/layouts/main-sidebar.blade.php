@@ -31,7 +31,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="elements" class="collapse" data-parent="#sidebarnav">
-                            <li><a href="{{ route('grade.index') }}">{{ trans('main_trans.stage_list') }}</a></li>
+                            <li><a href="{{ route('Grades.index') }}">{{ trans('main_trans.stage_list') }}</a></li>
                             
                             <li><a href="sweetalert2.html">sweetalert2</a></li>
                             <li><a href="touchspin.html">touchspin</a></li>
